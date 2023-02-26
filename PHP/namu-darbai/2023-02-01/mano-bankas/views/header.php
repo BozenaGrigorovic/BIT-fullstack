@@ -5,7 +5,7 @@ $navigation = [
     'Kortelės' => '?page=korteles',
     'Paskolos' => '?page=paskolos',
     'Pensija' => '?page=pensija',
-    'Internetinis Bankas' => '?page=internetinis-bankas'
+    'Internetinis Bankas' => '?page=login'
 ]
 
 ?>

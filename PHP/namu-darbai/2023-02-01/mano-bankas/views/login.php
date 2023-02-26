@@ -1,13 +1,14 @@
 <?php 
+// echo '<pre>';
+// print_r($APP['data']);
+// print_r($_POST);
 if (isset($_POST['id']) && isset($_POST['password'])) {
   if (checkLogin($_POST, $APP['data'])) {
-    header('Location: '.$APP['_ROOT_'].'index.php?page=admin');
+    redirectIfLoggedIn();
   }
 }
 
-if(isset($_SESSION['logged']) && $_SESSION['logged'] === true) {
-  header('Location: '.$APP['_ROOT_'].'index.php?page=admin');
-}
+redirectIfLoggedIn();
 
 ?>
 

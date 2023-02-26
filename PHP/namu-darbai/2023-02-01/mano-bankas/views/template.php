@@ -18,10 +18,12 @@
     </style>
 </head>
 <body>
-    <?php include('views/header.php'); ?>
-    <main>
-        <?php include("views/".$APP['page'].".php"); ?>
-    </main>
-    <?php include('views/footer.php'); ?>
+    <div class="container">
+        <?php include('views/header.php'); ?>
+        <main>
+            <?php include("views/".$APP['page'].".php"); ?>
+        </main>
+        <?php include('views/footer.php'); ?>
+    </div>
 </body>
 </html>
